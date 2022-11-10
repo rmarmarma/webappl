@@ -1,0 +1,31 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - Webappl</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css" th:href="@{/css/indexstyle.css}">
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+
+</head>
+<body>
+    <div th:replace="fragments/indexfrag :: header"></div>
+    <div class="container text-center">
+        <h1> Hello! Welcome to my practice website. </h1>
+        <h3>Have a dream but don't know where to get started? You are not alone! The world is a vast place, and it's
+            full of dream chasers like yourself. We understand that it can be difficult to find others who share the same vision, and so we thought it would
+            be helpful to provide a space where those connections can be easily made. We've partnered with a number of esteemed dream chasers who are
+            willing to share any experiences they've accumulated throughout their own journey (not really but try to play along!). The network being built here doesn't end
+            with them, however. Anyone can sign up and make themselves available to be contacted, and so our network is constantly growing; you'll be
+            sure to find someone that catches your eye. You have to be a member to get a hold of a person's contact information so take that
+            first step and join!</h3>
+        <h2><a th:href="@{/dreamers}">The Realm of Dreams</a></h2>
+    </div>
+    <div id="moongirl">
+        <img th:src="@{/images/moon.png}" alt="Girl and her dog looking up at the moon" width="400" height="300"/>
+    </div>
+    <div id="fairymoon">
+        <img th:src="@{/images/fairymoon.jpg}" alt="Fairy girl looking at the moon with reflection in the water" width="400"
+             height="300"/>
+    </div>
+</body>
+</html>

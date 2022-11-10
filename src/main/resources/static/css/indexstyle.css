@@ -1,0 +1,21 @@
+h1 {
+    font-family: fantasy
+    font-size: 1.5em;
+    color: #FFF176;
+}
+
+h3 {
+    color: #FFF176;
+}
+
+#fairymoon img {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+#moongirl img {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}

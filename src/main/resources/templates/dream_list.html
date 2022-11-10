@@ -1,0 +1,39 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Dreamers - Webappl</title>
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+
+</head>
+<body>
+<div th:replace="fragments/header :: header"></div>
+<div class="container text-center">
+    <div>
+        <h1> A list of those who aren't afraid to dream big and make it happen. </h1>
+    </div>
+    <div>
+        <table class="table table-striped table-bordered">
+            <thead class="thead-dark">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Dream</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="user: ${dreamList}">
+                <td th:text="${user.firstName}">First Name</td>
+                <td th:text="${user.lastName}">Last Name</td>
+                <td th:text="${user.dream}">Dream</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <p>Found someone that inspires you? Click the "List Users" tab on the navigation bar to find their contact
+        information. Don't be afraid to shoot them an email; that's why this website exists! :)</p>
+    </div>
+</div>
+</body>
+</html>
