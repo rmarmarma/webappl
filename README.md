@@ -12,3 +12,4 @@ in can see the given contact information of the other users.
 - Bootstrap & Webjars
 - MYSQL
 - Spring Security
+- Maven
