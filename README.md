@@ -13,3 +13,12 @@ in can see the given contact information of the other users.
 - MYSQL
 - Spring Security
 - Maven
+
+
+# Running Webappl
+
+Clone the repository using git if you have it installed, or simply download it as a .zip. Since the project utilizes the Spring Boot Maven plugin, once downloaded, you can start the application locally using the following command:
+
+$ mvn spring-boot:run
+
+Alternatively, you can open the project in an IDE, and build and run the project there.
